@@ -1,0 +1,135 @@
+/* --------------- --*/
+/* Custom Properties */
+/* ----------------- */
+
+:root {
+  /* colors */
+  --clr-dark-blue: rgb(20, 30, 76);
+  --clr-dark-trans: rgba(20, 30, 76, 0.9);
+  --clr-light-blue: rgb(223, 237, 245);
+  --clr-white: rgb(255, 255, 255);
+  --clr-black: rgb(0, 0, 0);
+  --clr-orange: rgb(251, 180, 76);
+  --clr-green: rgb(43, 182, 134);
+  --clr-shade: #121b44;
+
+  /* font-size */
+  --fs-500: 1rem;
+  --fs-400: 0.875rem;
+  --fs-300: 0.75rem;
+
+  /* font-families */
+  --ff-sans: "Poppins", sans-serif;
+}
+
+/* --------------- */
+/*      Reset      */
+/* --------------- */
+
+body {
+  font-family: var(--ff-sans);
+  font-size: var(--fs-400);
+  color: var(--clr-dark-blue);
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+h2,
+h3 {
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* --------------- */
+/* Utility classes */
+/* --------------- */
+
+/* General */
+
+.container-bg-dark {
+  background-color: var(--clr-dark-blue);
+}
+
+.container-bg-light {
+  background-color: var(--clr-light-blue);
+}
+
+.container-height {
+  min-height: 200px;
+}
+
+/* Typography */
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.fs-500 {
+  font-size: var(--fs-500);
+}
+.fs-400 {
+  font-size: var(--fs-400);
+}
+.fs-300 {
+  font-size: var(--fs-300);
+}
+
+/* inco class */
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.md-18 {
+  font-size: 18px;
+}
+
+/* -------------------------------- */
+/* Styling */
+/* -------------------------------- */
+
+/* Navbar */
+
+.logo-it-school {
+  height: 60px;
+  width: auto;
+}
+
+.dropdown-menu {
+  background-color: var(--clr-shade) !important;
+}
+
+.nav-link:hover,
+.dropdown-item:hover {
+  color: var(--clr-orange) !important;
+}
+
+.dropdown-item:hover {
+  background-color: transparent;
+}
+
+/* Footer */
+
+.footer {
+  margin-top: auto;
+  color: var(--clr-white);
+}
+
+.footer p {
+  margin: 0;
+}

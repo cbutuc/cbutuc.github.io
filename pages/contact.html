@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Google Icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/9742f126ba.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/contact.css" />
+  </head>
+  <body>
+    <header class="sticky-top">
+      <div class="container-bg-dark">
+        <nav
+          id="mainNavbar"
+          class="navbar navbar-dark navbar-expand-md container"
+        >
+          <div class="container-fluid">
+            <a href="../index.html" class="navbar-brand">
+              <img
+                class="logo-it-school"
+                src="../assets/logos/itschool-logo.png"
+                alt=""
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              data-bs-toggle="collapse"
+              data-bs-target="#navLinks"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navLinks">
+              <ul class="navbar-nav ms-auto uppercase fs-300">
+                <li class="nav-item">
+                  <a href="courses.html" class="nav-link text-white me-3"
+                    ><i class="fa-regular fa-bookmark me-2"></i>Cursuri
+                    online</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-white"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Despre noi
+                  </a>
+                  <ul class="dropdown-menu border-0 fs-300">
+                    <li>
+                      <a class="dropdown-item text-white" href="about.html"
+                        >Despre noi</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-white" href="../index.html"
+                        >IT School</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="contact.html" class="nav-link text-white">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container-bg-dark">
+        <section
+          class="container container-height d-grid justify-content-center align-items-center"
+        >
+          <h1 class="text-white text-center">Contact IT School</h1>
+        </section>
+      </div>
+
+      <section class="container">
+        <h2 class="text-center my-5">Informații generale</h2>
+        <p>
+          Nu ai găsit ce căutai sau te putem ajuta și cu alte informații
+          referitoare la programele de pregătire IT School? Suntem aici să te
+          ajutăm. Îți reamintim că pe pagina FAQ regăsești o listă cu cele mai
+          frecvente întrebări.
+        </p>
+        <p class="mb-5">Ne poți găsi la:</p>
+
+        <div class="mb-5 row">
+          <div class="col-md-6">
+            <ul class="contact">
+              <li class="d-flex justify-content-between border-bottom pb-2">
+                <p>
+                  <span class="material-symbols-outlined">phone_iphone</span>
+                  Mobil:
+                </p>
+                <a href="">+40 737 880 420</a>
+              </li>
+              <li class="d-flex justify-content-between border-bottom pb-2">
+                <p>
+                  <span class="material-symbols-outlined">email</span>
+                  E-mail:
+                </p>
+                <a href="">office@itschool.ro</a>
+              </li>
+              <li class="d-flex justify-content-between border-bottom pb-2">
+                <p>
+                  <span class="material-symbols-outlined">person</span>
+                  Facebook:
+                </p>
+                <a href="">ITSchool</a>
+              </li>
+              <li class="d-flex justify-content-between border-bottom pb-2">
+                <p>
+                  <span class="material-symbols-outlined">schedule</span>
+                  Program:
+                </p>
+                <a href="">Luni - Vineri, de la 10:00 - 18:00</a>
+              </li>
+              <li class="d-flex justify-content-between border-bottom pb-2">
+                <p>
+                  <span class="material-symbols-outlined">location_on</span>
+                  Sediu central:
+                </p>
+                <a href="">Timișoara</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-6">
+            <form class="contact-form ms-md-4 mt-5 mt-md-0" action="">
+              <div>
+                <label for="name" class="form-label">Nume Prenume</label>
+                <input
+                  type="password"
+                  id="nume"
+                  class="form-control form-control-sm"
+                  aria-describedby="passwordHelpBlock"
+                />
+              </div>
+              <div class="mt-3">
+                <label for="email" class="form-label">Adresa de email:</label>
+                <input
+                  type="email"
+                  class="form-control form-control-sm"
+                  id="email"
+                  placeholder="ion.ionescu@yahoo.com"
+                />
+              </div>
+              <div class="mt-3">
+                <label for="phone" class="form-label">Telefon:</label>
+                <input
+                  type="text"
+                  class="form-control form-control-sm"
+                  id="phone"
+                  palceholder="0744230000"
+                />
+              </div>
+              <div class="mt-3">
+                <label for="message" class="form-label">Masajul tau:</label>
+                <textarea
+                  name=""
+                  id="message"
+                  rows="4"
+                  class="form-control"
+                ></textarea>
+              </div>
+              <button class="button mt-3">Trimite</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container-bg-dark">
+      <div class="container fs-300 text-center p-2">
+        <p class="p-2">IT School România © 2021. Toate drepturile rezervate.</p>
+      </div>
+    </footer>
+    <!-- JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+/* ------------ */
+/* Hero Section*/
+/* ------------ */
+
+#showcase {
+  color: var(--clr-white);
+  min-height: 550px;
+}
+
+#showcase span {
+  color: var(--clr-orange);
+}
+
+.logo {
+  height: 24px;
+  width: auto;
+  margin-left: 1rem;
+}
+
+.button:link,
+.button:visited {
+  background-color: var(--clr-green);
+  border: 2px solid var(--clr-green);
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 1rem 4rem;
+}
+
+.button:hover,
+.button:active {
+  background-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    margin-top: 1rem;
+  }
+}
+
+/* -------------------- */
+/* Cursuri Section */
+/* --------------------- */
+
+.bg-accent {
+  background-color: var(--clr-orange);
+}
+
+hr {
+  border-color: var(--clr-green) !important;
+}
+
+/* -------------- */
+/* Ce este IT School */
+/* --------------- */
+
+.flow {
+  display: flow-root;
+}
+
+.grid img {
+  max-width: 100%;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "four"
+    "five"
+    "six";
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-areas:
+      "one two"
+      "three four"
+      "five six";
+  }
+}
+
+@media (min-width: 992px) {
+  .grid {
+    grid-template-areas:
+      "one two three"
+      "four five six";
+  }
+}
+
+/* ------------- */
+/* Parteneri */
+/* -------------- */
+
+.flex {
+  display: flex;
+  column-gap: 7rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.flex img {
+  flex-grow: 1;
+  width: 100px;
+  filter: grayscale(100%);
+}
+
+.flex img:hover {
+  filter: none;
+}

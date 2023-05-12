@@ -1,0 +1,43 @@
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .flex > * {
+    width: calc(100% / 2 - 0.5rem);
+  }
+}
+
+@media (min-width: 1105px) {
+  .flex > * {
+    width: calc(100% / 4 - 0.75rem);
+  }
+}
+
+.img-wrapper {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  transform: translateY(-40%);
+}
+
+.card-body {
+  margin-top: -6.5rem;
+  z-index: 1;
+}
+
+.card-body h4 {
+  background-color: var(--clr-dark-trans);
+  color: var(--clr-orange);
+  border-radius: 5px;
+  padding: 0.4rem 0;
+}

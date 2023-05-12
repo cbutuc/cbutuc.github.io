@@ -1,0 +1,24 @@
+.logo-course {
+  width: 80px;
+  height: auto;
+}
+
+.button:link,
+.button:visited {
+  background-color: var(--clr-green);
+  border: 2px solid var(--clr-green);
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 0.2rem 2rem;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.flex > * {
+  flex-grow: 1;
+}
